@@ -1,3 +1,3 @@
-for(let i=0;i>5;i++){
-  console.log(i);
-}
+```javascript
+// Please provide the JavaScript code with the issue.
+```
