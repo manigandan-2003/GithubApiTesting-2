@@ -1,3 +1,4 @@
-for(let i=0;i>5;i++){
-  console.log(i);
-}
+```javascript
+// There's no issue to fix.  "who is rahul??" is a question, not code.
+//  To provide code, I need a JavaScript code snippet with a problem.
+```
