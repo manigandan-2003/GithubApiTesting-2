@@ -1,3 +1,1 @@
-for(let i=0;i>5;i++){
-  console.log(i);
-}
+Please provide the JavaScript code with the issue.  I need the code to fix it.
