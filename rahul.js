@@ -1,3 +1,5 @@
-for(let i=0;i>5;i++){
+```javascript
+for (let i = 0; i <= 5; i++) {
   console.log(i);
 }
+```
