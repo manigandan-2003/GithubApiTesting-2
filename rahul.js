@@ -1,3 +1,3 @@
-for(let i=0;i>5;i++){
-  console.log(i);
-}
+```javascript
+summa = (arr) => arr.reduce((acc, curr) => acc + curr, 0);
+```
