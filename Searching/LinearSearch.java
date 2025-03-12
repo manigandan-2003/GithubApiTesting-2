@@ -1,18 +1,21 @@
 import java.util.Arrays;
 
 class LinearSearch {
-
     public static int linearSearch1D(int[] arr, int target) {
-        for (int i=0;i<arr.length;i++) {
-            if (arr[i] == target) return i;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i;
+            }
         }
         return -1;
     }
 
     public static int[] linearSearch2D(int[][] arr, int target) {
-        for (int row=0;row<arr.length;row++) {
-            for (int col=0;col<arr[row].length;col++) {
-                if (arr[row][col] == target) return new int[]{row, col};
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[row].length; col++) {
+                if (arr[row][col] == target) {
+                    return new int[]{row, col};
+                }
             }
         }
         return new int[]{-1, -1};
@@ -28,11 +31,7 @@ class LinearSearch {
             System.out.println("Element found at index: " + result);
         }
 
-        int arr2D[][] = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
+        int arr2D[][] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
         int result2D[] = linearSearch2D(arr2D, target);
         if (result2D[0] == -1) {
             System.out.println("Element not found");
