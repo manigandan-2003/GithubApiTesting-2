@@ -1,5 +1,4 @@
 public class Mani {
-
     static double sqrt(int n, int p) {
         int s = 0;
         int e = n;
@@ -22,10 +21,20 @@ public class Mani {
             root -= increment;
             increment /= 10;
         }
-        return s;
+        return root; // Corrected return value
     }
 
     public static void main(String[] args) {
-        System.out.printf("%.3f", sqrt(2, 3));
+        try {
+            int n = Integer.parseInt(args[0]);
+            int p = Integer.parseInt(args[1]);
+            System.out.printf("%.3f", sqrt(n, p));
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input: Please provide integer values for n and p.");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("Invalid input: Please provide two integer arguments.");
+        } catch (Exception e) {
+            System.err.println("An unexpected error occurred: " + e.getMessage());
+        }
     }
 }
