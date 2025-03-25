@@ -1,5 +1,4 @@
 public class Mani {
-
     static double sqrt(int n, int p) {
         int s = 0;
         int e = n;
@@ -22,7 +21,7 @@ public class Mani {
             root -= increment;
             increment /= 10;
         }
-        return s;
+        return root; // Corrected return statement
     }
 
     public static void main(String[] args) {
