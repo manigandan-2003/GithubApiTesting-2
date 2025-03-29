@@ -1,3 +1,23 @@
-for(let i=0;i>5;i++){
-  console.log(i);
+// You can add JavaScript code here to find the greatest and smallest elements of an array.
+// For example:
+function findMinMax(arr) {
+  if (!arr || arr.length === 0) {
+    return { min: undefined, max: undefined };
+  }
+
+  let min = arr[0];
+  let max = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+
+  return { min: min, max: max };
 }
+
+module.exports = findMinMax; // Export the function for use in other files
