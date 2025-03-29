@@ -1,4 +1,5 @@
 class File2{
  public static void main(String[] args) {
- System.out.println(add(2, 2));
+ File1 obj = new File1();
+ System.out.println(obj.add(2, 2));
  } }
