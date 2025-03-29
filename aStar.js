@@ -1,5 +1,4 @@
 // aStar.js
-
 function heuristic(a, b) {
   // Example heuristic: Manhattan distance
   return Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
