@@ -1,0 +1,35 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class file2 {
+
+    public static void guessNumber(int min, int max) {
+        Random random = new Random();
+        int numberToGuess = random.nextInt(max - min + 1) + min;
+        Scanner scanner = new Scanner(System.in);
+        int guess;
+        int attempts = 0;
+
+        System.out.println("Guess a number between " + min + " and " + max + ":");
+
+        do {
+            System.out.print("Enter your guess: ");
+            guess = scanner.nextInt();
+            attempts++;
+
+            if (guess < numberToGuess) {
+                System.out.println("Too low. Try again.");
+            } else if (guess > numberToGuess) {
+                System.out.println("Too high. Try again.");
+            } else {
+                System.out.println("Congratulations! You guessed the number in " + attempts + " attempts.");
+            }
+        } while (guess != numberToGuess);
+
+        scanner.close();
+    }
+
+    public static void main(String[] args) {
+        guessNumber(1, 100); // You can change the range here
+    }
+}
